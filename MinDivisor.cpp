@@ -23,6 +23,7 @@ Sample Output 2:
 
 #include <iostream>
 #include <cmath>
+
 using namespace std;
 
 int MinDivisor(int x) {
@@ -37,7 +38,10 @@ int MinDivisor(int x) {
 int main()
 {
     int a;
+    
     cin >> a;
+    
     cout << MinDivisor(a) << endl;
+    
     return 0;
 }
