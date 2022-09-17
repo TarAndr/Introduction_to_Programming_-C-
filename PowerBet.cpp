@@ -30,6 +30,7 @@ Sample Output 2:
 *******************************************************************************/
 
 #include <iostream>
+
 using namespace std;
 
 double powerr(double x, int n) {
@@ -43,7 +44,10 @@ int main()
 {
     double a;
     int b;
+    
     cin >> a >> b;
+    
     cout << powerr(a, b) << endl;
+    
     return 0;
 }
