@@ -25,6 +25,7 @@ Sample Output 2:
 *******************************************************************************/
 
 #include <iostream>
+
 using namespace std;
 
 double power(double x, int n) {
@@ -38,7 +39,10 @@ int main()
 {
     double a;
     int b;
+    
     cin >> a >> b;
+    
     cout << power(a, b) << endl;
+    
     return 0;
 }
