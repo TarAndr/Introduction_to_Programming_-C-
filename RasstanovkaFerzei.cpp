@@ -56,13 +56,15 @@ int number_of_ways(int n) {
     }
     int I[n - 1], J[n - 1];
     return queen(n, 0, I, J);
-    // return 92;
 }
 
 int main()
 {
     int a;
+    
     cin >> a;
+    
     cout << number_of_ways(a) << endl;
+    
     return 0;
 }
