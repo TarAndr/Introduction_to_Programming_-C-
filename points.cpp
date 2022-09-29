@@ -35,8 +35,11 @@ bool comp(pair <int, int> a, pair <int, int> b) {
 int main()
 {
     int n;
+    
     cin >> n;
+    
     vector <pair <int, int>> A(n);
+    
     while(n--) {
         int x, y;
         cin >> x >> y;
