@@ -29,12 +29,16 @@ int main()
 {
     int i = 0;
     double A = 0, S = 0;
+    
     while(cin >> A && A) {
         S += A;
         i++;
     }
+    
     S /= i;
+    
     cout << setprecision(11) << fixed;
     cout << S << endl;
+    
     return 0;
 }
