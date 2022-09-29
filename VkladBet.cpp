@@ -28,11 +28,15 @@ using namespace std;
 int main()
 {
     double P, X, Y;
+    
     cin >> P >> X >> Y;
+    
     X += Y / 100;
     X += X * P / 100;
     Y = trunc(X * 100 - trunc(X) * 100);
     X = trunc(X);
+    
     cout << X << " " << Y << endl;
+    
     return 0;
 }
