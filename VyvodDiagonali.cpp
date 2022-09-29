@@ -37,16 +37,22 @@ using namespace std;
 int main()
 {
     int n, k;
+    
     cin >> n;
+    
     int A[n][n];
+    
     for(int i = 0; i < n; i++) {
         for(int j = 0; j < n; j++) {
             cin >> A[i][j];
         }
     }
+    
     cin >> k;
+    
     for(int i = ((k < 0) ? 0 : k); i < ((k < 0) ? n + k : n); i++) {
         cout << A[i][i - k] << " ";
     }
+    
     return 0;
 }
