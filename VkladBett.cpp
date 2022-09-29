@@ -27,14 +27,20 @@ using namespace std;
 int main()
 {
     int P, X, Y, K;
+    
     cin >> P >> X >> Y >> K;
+    
     Y += X * 100;
+    
     while(K) {
         Y += Y * P / 100;
         K--;
     }
+    
     X = Y / 100;
     Y %= 100;
+    
     cout << X << " " << Y << endl;
+    
     return 0;
 }
