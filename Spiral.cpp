@@ -20,14 +20,18 @@ Sample Output:
 
 #include <iostream>
 #include <iomanip>
+
 using namespace std;
 
 int main()
 {
     int m, n, cnt = 0, s = 1;
+   
     cin >> m >> n;
+   
     int A[m][n];
     int l, i = 0, j = 0;
+   
     for(int k = 0; k < ((m < n) ? m : n); k++, s = -s) {
         l = k / 2;
         for(j = ((k % 2) ? n - l - 2 : l); j != ((k % 2) ? l - 1: n - l); j += s) {
@@ -43,11 +47,13 @@ int main()
         i -= s;
         //cout << endl;
     }
+   
     for(i = 0; i < m; i++) {
         for(j = 0; j < n; j++) {
             cout << setw(4) << A[i][j];
         }
         cout << endl;
     }
+   
     return 0;
 }
